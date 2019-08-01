@@ -1,4 +1,6 @@
+language: generic
 sudo: required
+
 services:
   - docker
 
@@ -7,3 +9,4 @@ before_install:
 
 script:
   - docker run -e CI=true bappa0604/docker-react npm run test -- --coverage
+
